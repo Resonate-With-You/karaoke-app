@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Redirecting…</title>
+  <!--
+    Replace PUBLIC_IP and optional :PORT with your target (for example: 203.0.113.5 or 203.0.113.5:8080)
+    Optionally replace PROTOCOL with http or https. If you use http while the page is served from https, browsers will show mixed-content/security warnings.
+  -->
+  <meta http-equiv="refresh" content="0;url=http://44.246.124.185/user.html">
+  <script>
+    // JavaScript redirect (faster fallback in most browsers)
+    (function(){
+      var target = "http://44.246.124.185/user.html"; // <-- update this
+      // Use replace so the redirect doesn't create an extra entry in the browser history
+      try { window.location.replace(target); } catch (e) { window.location = target; }
+    })();
+  </script>
+  <style>
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    .wrap{display:flex;align-items:center;justify-content:center;height:100%;text-align:center;padding:24px}
+    a{color:#0366d6}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div>
+      <h1>Redirecting...</h1>
+      <p>If your browser doesn't redirect automatically, <a href="http://44.246.124.185/user.html">click here to open the site</a>.</p>
+      <p style="color:#666;font-size:0.9rem">Replace <code>PUBLIC_IP:PORT</code> in this file with your IP and port before publishing.</p>
+    </div>
+  </div>
+</body>
+</html>
